@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <title>CO Carousel</title>
+  
+  <link rel="stylesheet" href="css/reset-html5.css" media="screen" />
+  <link rel="stylesheet" href="css/styles.css" media="screen" />
+
+</head>
+<body>
+  <header>
+    <h1>3d carousel</h1>
+    <p>merry go around..</p>
+  </header>
+
+  <section id="slides">    
+      <ul>
+
+        <li class="slider fl P1000001" style="display: list-item; opacity: 0; left: 0px; top: 0px; z-index: 0;">
+          <img src="images/1-norelco-7310.jpg" alt="Norelco 7310" style="width: 112px; display: inline; height: 160px; margin: 1px; opacity: 1;">
+          <span style="opacity: 0; font-size: 9px; padding: 6px 9px 8px;">
+            <h3 style="font-size: 30px;">Norelco 7310</h3> € 69.50
+          </span>
+        </li>
+
+        <li class="slider fl P1000002" style="display: list-item; opacity: 0.15; left: 0px; top: 0px; z-index: 1;">
+          <img src="images/2-norelco-qg3360.jpg" alt="Norelco-QG3360" style="width: 112px; display: inline; height: 160px; margin: 1px; opacity: 1;">
+          <span style="opacity: 0; font-size: 9px; padding: 6px 9px 8px;">
+            <h3 style="font-size: 30px;">Norelco-QG3360</h3> € 69.50
+          </span>
+        </li>
+
+        <li class="slider fl P1000003"  style="display: list-item; opacity: 0.4; left: 98px; top: 20px; z-index: 2;">
+          <img src="images/3-norelco-7810XL.jpg" alt="Norelco 7810XL"  style="width: 196px; display: inline; height: 280px; margin: 3px; opacity: 1;">
+          <span style="opacity: 0; font-size: 9px; padding: 8px 12px 11px;">
+            <h3 style="font-size: 30px;">Norelco 7810XL</h3> € 69.50
+          </span>
+        </li>
+
+        <li class="slider fc P1000004" style="display: list-item; opacity: 1; left: 253px; top: 40px; z-index: 3;">
+          <img src="images/4-norelco-3d.jpg" alt="Norelco 3D" style="width: 280px; display: block; height: 400px; margin: 6px; opacity: 1; overflow: hidden;">
+          <span style="opacity: 0.6; font-size: 11px; padding: 10px 15px 14px;">
+            <h3 style="font-size: 30px;">Norelco 3D</h3> € 69.50
+          </span>
+        </li>
+
+        <li class="slider fr P1000005" style="display: list-item; opacity: 0.4; left: 498px; top: 20px; z-index: 2;">
+          <img src="images/5-norelco-8100.jpg" alt="Norelco 8100" style="width: 196px; display: inline; height: 280px; margin: 3px; opacity: 1;">
+          <span style="opacity: 0; font-size: 9px; padding: 8px 12px 11px;">
+            <h3 style="font-size: 30px;">Norelco 8100</h3> € 69.50
+          </span>
+        </li>
+
+        <li class="slider fr P1000006" style="display: list-item; opacity: 0.15; left: 684px; top: 0px; z-index: 1;">
+          <img src="images/6-norelco-g370.jpg" alt="Norelco G370" style="width: 112px; display: block; height: 160px; margin: 1px; opacity: 1; overflow: hidden;">
+          <span style="opacity: 0; font-size: 9px; padding: 6px 9px 8px;">
+            <h3 style="font-size: 30px;">Norelco G370</h3> € 69.50
+          </span>
+        </li>
+
+        <li class="slider fr P1000007" style="display: list-item; opacity: 0; left: 684px; top: 0px; z-index: 0;">
+          <img src="images/7-norelco-bg2040-34.jpg" alt="Norelco BG2040/34" style="width: 112px; display: block; height: 160px; margin: 1px; opacity: 1; overflow: hidden;">
+          <span style="opacity: 0; font-size: 9px; padding: 6px 9px 8px;">
+            <h3 style="font-size: 30px;">Norelco BG2040/34</h3> € 69.50
+          </span>
+        </li>
+
+        <li class="slider fr P1000008" style="display: list-item; opacity: 0; left: 684px; top: 0px; z-index: 0;">
+          <img src="images/8-norelco-qt4010.jpg" alt="Norelco QT4010" style="width: 112px; display: block; height: 160px; margin: 1px; opacity: 1; overflow: hidden;">
+          <span style="opacity: 0; font-size: 9px; padding: 6px 9px 8px;">
+            <h3 style="font-size: 30px;">Norelco QT4010</h3> € 69.50
+          </span>
+        </li>
+
+      </ul>      
+  </section>
+
+  <section id="details">
+  </section>
+
+  <footer>
+    <p>3D Carousel for CO.. &copy; Charles Selvarajan 2015</p>
+  </footer>
+
+  <script type="text/html" id='review-head'>
+    <div>
+      <h2><%= product_name %></h2>
+      <p><%= product_desc %></p>
+    </div>
+  </script>
+
+  <script type="text/html" id='review-cont'>
+    <article>
+      <h3><%= title %></h3>
+      <p><%= nickname %></p>
+      <p><%= rating %></p>
+      <p><%= review_text %></p>
+    </article>
+  </script>  
+  
+  <script type="text/html" id='review-nodata'>
+    <div>
+      <p>Data not found for the current selection</p>
+    </div>
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="js/dlib.js"></script>
+  <script src="js/dlib.css.js"></script>
+  <script src="js/dlib.pos.js"></script>
+  <script src="js/dlib.events.js"></script>
+  <script src="js/json-minified.js"></script>
+  <script src="js/carousal.dlib.js"></script>
+  <script>
+      // plug-in the slides to the carousel method
+      d('#slides').Carousel3d();
+  </script>  
+</body>
+</html>
